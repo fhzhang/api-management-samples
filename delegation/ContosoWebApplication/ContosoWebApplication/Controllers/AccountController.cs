@@ -488,8 +488,8 @@ namespace ContosoWebApplication.Controllers
                                     
                                     //Currently this is returing the old developer portal url, if you want to implement it with new developer portal please use .Replace("portal","developer") or similar to get it to work.
                                     //We have work item for this and should be fixed soon.
-                                    //return Redirect(su.value.Replace(".portal.", ".developer."));
-                                    return Redirect(su.value);
+                                    return Redirect(su.value.Replace(".portal.", ".developer."));
+                                    //return Redirect(su.value);
                                 }
                                 else
                                 {
