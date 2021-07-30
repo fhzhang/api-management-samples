@@ -34,7 +34,7 @@ namespace ContosoWebApplication.Controllers
         string ApimRestPK = "B9LmwFzmONIRtpXf/1BDVaerLWMGRG62v7eB6HfV4yDBYbEhJkI+OJuCcqt5hhTzy6jxxZSEN6AJchx/xaFksQ==";
 
         DateTime ApimRestExpiry = DateTime.UtcNow.AddDays(10);
-        string ApimRestApiVersion = "2019-01-01";
+        string ApimRestApiVersion = "2020-12-01";
 
         string developerPortalUrl = "https://z500.developer.azure-api.net";
 
