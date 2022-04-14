@@ -24,19 +24,19 @@ namespace ContosoWebApplication.Controllers
     [Authorize]
     public class AccountController : Controller
     {
-        string resourceUri = "subscriptions/aea71e51-705b-4f5d-a3c9-49eede94cb81/resourceGroups/orange/providers/Microsoft.ApiManagement/service/z500/";
+        string resourceUri = "/subscriptions/aea71e51-705b-4f5d-a3c9-49eede94cb81/resourceGroups/AppGW-APIM/providers/Microsoft.ApiManagement/service/k9";
         // Management API URL (which you will find in the "Management API" blade of APIM) https://docs.microsoft.com/en-us/rest/api/apimanagement/apimanagementrest/api-management-rest 
         //Management API + Resource URI
-        string ApimRestHost = "https://z500.management.azure-api.net/subscriptions/aea71e51-705b-4f5d-a3c9-49eede94cb81/resourceGroups/orange/providers/Microsoft.ApiManagement/service/z500/";
+        string ApimRestHost = "https://management.pitol.cn/subscriptions/aea71e51-705b-4f5d-a3c9-49eede94cb81/resourceGroups/AppGW-APIM/providers/Microsoft.ApiManagement/service/k9/";
         //Identifier under credentials
         string ApimRestId = "integration"; 
         //Primary key
-        string ApimRestPK = "B9LmwFzmONIRtpXf/1BDVaerLWMGRG62v7eB6HfV4yDBYbEhJkI+OJuCcqt5hhTzy6jxxZSEN6AJchx/xaFksQ==";
+        string ApimRestPK = "4EY7n7s61ggFezE1aDahC9Mn1HH+y8kHr/h5Rd0xYIAFelwi5NWKDHgKiR7Zlydft4HTttBlgGEB5WtEORzHaQ==";
 
         DateTime ApimRestExpiry = DateTime.UtcNow.AddDays(10);
         string ApimRestApiVersion = "2020-12-01";
 
-        string developerPortalUrl = "https://z500.developer.azure-api.net";
+        string developerPortalUrl = "https://developer.pitol.cn";
 
         public AccountController()
             : this(new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext())))
@@ -425,7 +425,7 @@ namespace ContosoWebApplication.Controllers
         
         public async Task<ActionResult> Delegate()
         {
-            string key = "aW50ZWdyYXRpb24mMjAyMjAzMjUwMDIxJkdZa3lyUDIzN1FMbTh3M1o4K0dxMmpBdE9ERU8vbUdIYnhPOGx0Nk8yMGpKQTk0alYrbmJqdDJUQnFJdzdpQXg5eUJIVVdLQzRROWcyb1dJVjl6MUlRPT0=";
+            string key = "aW50ZWdyYXRpb24mMjAyMjA1MTMwMTI5Jnk3dTZSRXNyTXNPSEZNbWxWMGJZc0EwRXJCZ3BiQzduZmtIOEIyQk1qRmpkWjRnN0tlR0xsdk45SE9WcUQ4TGhYQTc0ZGRiTld6Q056ZFM4Y2l3RUNnPT0=";
             string returnUrl = Request.QueryString["returnUrl"];
             string productId = Request.QueryString["productId"];
             string subscriptionId = Request.QueryString["subscriptionId"];
