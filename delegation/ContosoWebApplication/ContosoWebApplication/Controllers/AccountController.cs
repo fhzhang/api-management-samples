@@ -24,10 +24,10 @@ namespace ContosoWebApplication.Controllers
     [Authorize]
     public class AccountController : Controller
     {
-        string resourceUri = "/subscriptions/aea71e51-705b-4f5d-a3c9-49eede94cb81/resourceGroups/orange/providers/Microsoft.ApiManagement/service/z500";
+        string resourceUri = "/subscriptions/aea71e51-705b-4f5d-a3c9-49eede94cb81/resourceGroups/orange/providers/Microsoft.ApiManagement/service/z500/";
         // Management API URL (which you will find in the "Management API" blade of APIM) https://docs.microsoft.com/en-us/rest/api/apimanagement/apimanagementrest/api-management-rest 
         //Management API + Resource URI
-        string ApimRestHost = "https://z500.management.azure-api.net/subscriptions/aea71e51-705b-4f5d-a3c9-49eede94cb81/resourceGroups/orange/providers/Microsoft.ApiManagement/service/z500";
+        string ApimRestHost = "https://z500.management.azure-api.net/subscriptions/aea71e51-705b-4f5d-a3c9-49eede94cb81/resourceGroups/orange/providers/Microsoft.ApiManagement/service/z500/";
         //Identifier under credentials
         string ApimRestId = "integration"; 
         //Primary key
