@@ -425,7 +425,7 @@ namespace ContosoWebApplication.Controllers
         
         public async Task<ActionResult> Delegate()
         {
-            string key = "aW50ZWdyYXRpb24mMjAyMjA1MTMwOTM2JkRzOWJ0NW5UN09zRGlHQUtyZWRKSjkyL1FwOXpONGZEV3JEcGc2Q01oRkZJNzNEUm1jUjgyTUZUQ3dCTWtSZnU0RXdTUEhUL3Q1MThJdlNGT3VGcDFnPT0=";
+            string key = "aW50ZWdyYXRpb24mMjAyMjA1MjMwNjM2JjZFZVFVa2tnTlo4cFJRUWRjejFZRjhDOWhXT1VzK0lEVTc1T1VyZVV4czQ5anNyeEMrQi9McC9xL1JOcm10d3FQano1WjRhaUUxWDFrempLN0VrVmZBPT0=";
             string returnUrl = Request.QueryString["returnUrl"];
             string productId = Request.QueryString["productId"];
             string subscriptionId = Request.QueryString["subscriptionId"];
